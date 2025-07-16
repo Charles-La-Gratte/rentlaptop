@@ -6,8 +6,10 @@ import Footer from './Footer'
 
 const Layout = () => {
   return (
-    <div>
+    <div className='bg-zinc-200'>
+      <main className='w-[1200px] max-w-full m-auto p-5 transform transition-transform duration-500'>
         <Header/>
+      </main>
         <HeroSection/>
         <FeatureTab/>
         <Footer/>
