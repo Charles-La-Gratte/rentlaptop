@@ -2,9 +2,9 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div class="relative isolate overflow-hidden bg-gray-900">
+    <div className="relative isolate overflow-hidden bg-gray-900">
   <svg
-    class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
     aria-hidden="true">
     <defs>
       <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="100%" y="-1"
@@ -19,25 +19,24 @@ const HeroSection = () => {
     <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"></rect>
   </svg>
   <div
-    class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+    className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
     aria-hidden="true">
-    <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+    <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
       >
     </div>
   </div>
-  <div class="mt-[-50px] flex h-screen items-center justify-center">
-    <div class="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
-      <h1 class="mt-10 text-5xl font-bold tracking-tight text-white sm:text-6xl">
-        revolutionize
-        <span class="text-sky-500">your workflow</span> with
-        <span class="text-sky-500">Zynx</span>
+  <div className="mt-[-50px] flex h-screen items-center justify-center">
+    <div className="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
+      <h1 className="mt-10 text-5xl font-bold tracking-tight text-white sm:text-6xl">
+       Power Up 
+        <span className="text-sky-500"> with flexible </span> Laptop
+        <span className="text-sky-500"> Rentals</span>
       </h1>
-      <p class="mt-6 text-lg leading-8 text-gray-300">Elevate Your Productivity With Zynx, Your Personalized Workflow
-        Assistant</p>
-      <div class="mt-5 flex items-center justify-center gap-x-6">
+      <p className="mt-6 text-lg leading-8 text-gray-300">Flexible, affordable laptop rentals delivered to your location — perfect for students, professionals, and travelers.</p>
+      <div className="mt-5 flex items-center justify-center gap-x-6">
         <a href="/register"
-          class="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
-          rel="noreferrer">Try Now →</a>
+          className="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+          rel="noreferrer">Browse Laptops →</a>
       </div>
     </div>
   </div>
