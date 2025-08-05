@@ -6,6 +6,7 @@ import imageProduct5 from './assets/images/5.png'
 import imageProduct6 from './assets/images/6.png' 
 import imageProduct7 from './assets/images/7.png' 
 import imageProduct8 from './assets/images/8.png' 
+
 export const products = [
     {
         id: 1,
