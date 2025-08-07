@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux'
-import cartItem from "./cartItem";
+import CartItem from "./cartItem";
 import { toggleStatusTab } from '../stores/cart';
 
 const CartTab = () => {
@@ -17,8 +17,12 @@ const CartTab = () => {
     `}>
       <h2 className='p-5 text-white text-2xl'>Shopping Cart</h2>
       <div className='p-5'>
-        {carts.map((item, key) =>
-          <cartItem key={key} data={item}/>
+        {carts.length > 0 ? (
+          carts.map((item, key) => (
+            <CartItem key={key} data={item} />
+          ))
+        ) : (
+          <div className="text-white">Your cart is empty.</div>
         )}
       </div>
       <div className='grid grid-cols-2'>

@@ -61,7 +61,7 @@ const NavBar = () => {
               to="/contact"
               className="text-xl font-semibold text-black-300 hover:text-blue-600"
             >
-              Sign up <FontAwesomeIcon />
+              Sign up
             </Link>
             <Link
               to="/Login"
