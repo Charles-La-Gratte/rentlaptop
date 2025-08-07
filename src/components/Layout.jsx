@@ -3,7 +3,6 @@ import Header from './Header'
 import HeroSection from './HeroSection'
 import FeatureTab from './FeatureTab'
 import Footer from './Footer'
-import { Outlet } from 'react-router-dom'
 import CartTab from './CartTab'
 import { useSelector } from 'react-redux'
 
