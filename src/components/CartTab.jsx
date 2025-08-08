@@ -27,7 +27,7 @@ const CartTab = () => {
       </div>
       <div className='grid grid-cols-2'>
         <button className='bg-black text-white' onClick={handleCloseTabCart}>Close</button>
-        <button className='bg-orange-600 text-white'>Checkout</button>
+        <button className='bg-blue-500 text-white'>Checkout</button>
 
       </div>
     </div>
