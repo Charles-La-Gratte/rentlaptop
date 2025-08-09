@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignIn } from "@fortawesome/free-solid-svg-icons";
 import iconCart from '../assets/images/iconCart.png';
 import { useDispatch, useSelector } from "react-redux";
 import { toggleStatusTab } from "../stores/cart";
