@@ -29,7 +29,7 @@ const FeatureItem = (props) => {
             </p>
             <button className='bg-gray-300 p-2 rounded-md text-sm hover:bg-sky-500' onClick={handleAddToCart}>
                 <img src={iconCart} className='w-5' alt=""/>
-                Add To Cart
+                Rent Now
             </button>
         </div>
     </div>

@@ -3,15 +3,18 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPas
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+  //Initialize firebase authentification and navigation
   const auth = getAuth();
   const navigate = useNavigate();
 
+  //State variables for managing authentification state, email, pwd, confirm pwd and error messages
   const [authing, setAuthing] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
-
+  
+  //Function to handle signup with google
   const signUpWithGoogle = async () => {
     setAuthing(true);
     signInWithPopup(auth, new GoogleAuthProvider())
@@ -24,14 +27,16 @@ const Signup = () => {
         setAuthing(false);
       });
   };
-
+  //Function to handle sign up with email and pwd
   const signUpWithEmail = async () => {
+    //check if pwd match
     if (password !== confirmPassword) {
       setError('Passwords do not match');
       return;
     }
     setAuthing(true);
     setError('');
+    //use firebase to create a new user with email and pwd
     createUserWithEmailAndPassword(auth, email, password)
       .then(response => {
         console.log(response.user.uid);

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
+
 const Login = () => {
   const auth = getAuth();
   const navigate = useNavigate();
@@ -44,7 +45,7 @@ const Login = () => {
       {/* Left section */}
       <div className="hidden md:flex w-1/2 h-full bg-[#282c34] items-center justify-center">
         {/* You can place an image or branding here */}
-        <h1 className="text-white text-3xl font-bold">My Brand</h1>
+        <h1 className="text-white text-3xl font-bold">Rent Laptop</h1>
       </div>
 
       {/* Right section */}

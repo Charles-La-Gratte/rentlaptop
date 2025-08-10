@@ -4,6 +4,7 @@ import Detail from './pages/Detail';
 import Home from './pages/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import AuthRoute from './components/AuthRoute';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { initializeApp } from "firebase/app";
 
@@ -22,6 +23,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Layout/>}>
+      {/*</Route><Route path='/' element={<AuthRoute><Layout/></AuthRoute>}>*/}
         <Route index element={<Home/>}/>
         <Route path='/:slug' element={<Detail/>}/>
         <Route path='*' element={<Navigate to="/" />}/>
