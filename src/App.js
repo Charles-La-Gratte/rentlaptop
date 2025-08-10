@@ -4,7 +4,7 @@ import Detail from './pages/Detail';
 import Home from './pages/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import AuthRoute from './components/AuthRoute';
+//import AuthRoute from './components/AuthRoute';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { initializeApp } from "firebase/app";
 
