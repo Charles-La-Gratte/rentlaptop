@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from 'react-redux'
 import CartItem from "./cartItem";
 import { toggleStatusTab } from '../stores/cart';
+import { Link } from "react-router-dom";
+
 
 const CartTab = () => {
   const carts = useSelector((store) => store.cart.items);
@@ -10,6 +12,14 @@ const CartTab = () => {
   const handleCloseTabCart = () => {
     dispatch(toggleStatusTab());
   };
+  const handleCheckOut = () =>{
+    if(carts.length > 0){
+      alert("Proceeding to checkout...");
+      return <Link to="/login" />;
+    } else {
+      alert("Your cart is empty.");
+    }
+  }
   return (
    <div className={`fixed top-0 right-0 bg-gray-700 shadow-2xl w-96 h-full grid grid-rows-[60px_1fr_60px]
     transform transition-transform duration-500
@@ -27,7 +37,7 @@ const CartTab = () => {
       </div>
       <div className='grid grid-cols-2'>
         <button className='bg-black text-white' onClick={handleCloseTabCart}>Close</button>
-        <button className='bg-blue-500 text-white'>Checkout</button>
+       <button className='bg-blue-500 text-white' onClick={handleCheckOut}>Checkout</button>
 
       </div>
     </div>
