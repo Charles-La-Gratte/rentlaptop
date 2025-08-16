@@ -50,11 +50,10 @@ const Signup = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col md:flex-row">
-      {/* Left Section */}
-      <div className="hidden md:flex w-1/2 h-full bg-[#282c34] items-center justify-center">
-        {/* Branding / Image */}
-        <h1 className="text-white text-3xl font-bold">RentLaptop</h1>
+    <div className="w-full min-h-screen flex flex-col md:flex-row  bg-sky-500">
+       {/* Left section */}
+      <div className="hidden md:flex w-1/2 h-full bg-[#283234] items-center justify-center">
+      
       </div>
 
       {/* Right Section */}
@@ -117,7 +116,7 @@ const Signup = () => {
           <button
             onClick={signUpWithGoogle}
             disabled={authing}
-            className="w-full bg-sky-500 text-black font-semibold rounded-md p-3 text-center flex items-center justify-center cursor-pointer mt-5 hover:bg-sky-400 transition"
+            className="w-full bg-amber-500 text-black font-semibold rounded-md p-3 text-center flex items-center justify-center cursor-pointer mt-5 hover:bg-sky-400 transition"
           >
             Sign Up With Google
           </button>

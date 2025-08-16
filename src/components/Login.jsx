@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import imageBrand from '../assets/images/login.jpg'
 
 
 const Login = () => {
@@ -41,12 +42,12 @@ const Login = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col md:flex-row">
+    <div className="w-full min-h-screen flex flex-col md:flex-row bg-sky-500">
       {/* Left section */}
-      <div className="hidden md:flex w-1/2 h-full bg-[#282c34] items-center justify-center">
-        {/* You can place an image or branding here */}
-        <h1 className="text-white text-3xl font-bold">Rent Laptop</h1>
+      <div className="hidden md:flex w-1/2 h-full bg-[#283234] items-center justify-center">
+      
       </div>
+      
 
       {/* Right section */}
       <div className="w-full md:w-1/2 h-full bg-[#1a1a1a] flex flex-col p-6 sm:p-12 justify-center">
@@ -97,7 +98,7 @@ const Login = () => {
 
           {/* Google Login */}
           <button
-            className="w-full bg-sky-500 text-black font-semibold rounded-md p-3 text-center flex items-center justify-center cursor-pointer mt-5 hover:bg-sky-400 transition"
+            className="w-full bg-amber-500 text-black font-semibold rounded-md p-3 text-center flex items-center justify-center cursor-pointer mt-5 hover:bg-sky-400 transition"
             onClick={signInWithGoogle}
             disabled={authing}
           >
